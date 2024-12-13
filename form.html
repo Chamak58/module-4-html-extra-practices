@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Form</title>
     <style>
+        body{
+            font-family: cursive;
+        }
         label{
-            display: block;
+            display: flex;
             margin-bottom: 10px;
+        }
+        input{
+            display: block;
+        }
+        .decorate{
+           width: 40%;
+           height: 30px;
+           margin-bottom: 10px;
+           border-radius: 20px; 
         }
     </style>
 </head>
@@ -18,9 +30,7 @@
 
 
     <body>
-       <h2>Form with radio type in input tag</h2>
-       <p>In this input tag, we can use radio type with fieldset. The result is that there are some options but we can select one by using same ID.</p>
-
+       
        <form>
            <label for="name">Your Name:
             <input type="text" placeholder="your name">
@@ -32,7 +42,77 @@
             <input type="password" name="" id="" placeholder="password">
            </label>
            <button>Submit</button>
+
+           
        </form>
+       
+
+       <section>
+        <h2>Fieldset with radio type in input tag</h2>
+
+       <p>In this input tag, we can use radio type with fieldset. The result is that there are some options but we can select one by using same ID.</p>
+
+        <form>
+            <fieldset>
+                <legend>Choose Your Favorite Tea</legend>
+            <label for="green tea">
+                <input type="radio" name="tea" id="green tea">Green Tea
+            </label>
+            <label for="lemon tea">
+                <input type="radio" name="tea" id="lemon tea">Lemon Tea
+            </label>
+            <label for="masala tea">
+                <input type="radio" name="tea" id="masala tea">Masala Tea
+            </label>
+            <label for="7 layer tea">
+                <input type="radio" name="tea" id="7 layer tea">7 Layer Tea
+            </label>
+            </fieldset>
+        </form>
+       </section>
+       <section>
+        <h2>
+            Fieldset with checkbox type
+        </h2>
+        <p>By using this tag, we can select more options</p>
+        <form>
+            <fieldset>
+                <legend>Make your favorite list</legend>
+                <label for="tea">
+                    <input type="checkbox" name="" id="tea">Tea
+                </label>
+                <label for="coffee">
+                    <input type="checkbox" name="" id="coffee">Coffee
+                </label>
+                <label for="noodles">
+                    <input type="checkbox" name="" id="noodles">Noodles
+                </label>
+                <label for="chicken pizza">
+                    <input type="checkbox" name="" id="chicken pizza">Chicken Pizza
+                </label>
+                <label for="parata">
+                    <input type="checkbox" name="" id="parata">Parata
+                </label>
+                <label for="ruti">
+                    <input type="checkbox" name="" id="ruti">Ruti
+                </label>
+                <label for="dal-vaji">
+                    <input type="checkbox" name="" id="dal-vaji">Dal-vaji
+                </label>
+                <label for="egg omlate">
+                    <input type="checkbox" name="" id="egg omlate">Egg Omlate
+                </label>
+            </fieldset>
+            <h4>Write Your Comment:</h4>
+            <textarea name="" id="" cols="67" rows="5">
+                
+            </textarea>
+            <input class="decorate" type="reset" value="Reset">
+            <input class="decorate" type="submit" value="Submit">
+            
+        </form>
+       </section>
+       
        
     </body>
 
