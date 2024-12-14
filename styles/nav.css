@@ -1,0 +1,16 @@
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 20px;
+}
+nav li a{
+    text-decoration: underline;
+    color: black;
+}
+li a:hover{
+    background-color: rgb(3, 20, 51);
+    cursor:auto;
+    color: darkorange;
+}
